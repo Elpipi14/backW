@@ -24,8 +24,8 @@ const transporter = nodemailer.createTransport({
     port: 465,
     secure: true, // true para el puerto 465, false para otros puertos
     auth: {
-        user: 'info@widuweb.com', // Tu correo SMTP
-        pass: process.env.SMTP_PASSWORD, // La contraseña se recomienda guardarla en una variable de entorno
+        user: process.env.EMAIL_USER, // Tu correo SMTP
+        pass: process.env.EMAIL_PASS, // La contraseña se recomienda guardarla en una variable de entorno
     },
 });
 
