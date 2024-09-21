@@ -106,7 +106,7 @@ const port = process.env.PORT || 5000;
 
 // Middleware
 const corsOptions = {
-    origin: 'http://localhost:3000',
+    origin: 'http://widuweb.com',
     credentials: true,
 };
 app.use(cors(corsOptions));
